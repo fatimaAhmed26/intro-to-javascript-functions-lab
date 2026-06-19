@@ -111,7 +111,7 @@ console.log('Exercise 6 Result:', maxOfThree(5, 10, 8));
 /*
 Exercise 7: calculateTip()
 
-Create a function called calculateTip. It should take two arguments: 
+Create a function called subtractcalculateTip. It should take two arguments: 
 the bill amount and the tip percentage (as a whole number). 
 The function should return the amount of the tip.
 
@@ -162,7 +162,21 @@ Example: basicCalculator(10, 5, 'subtract') should return 5.
 
 Complete the exercise in the space below:
 */
+function basicCalculator(num1 , num2 , operation){
+    if(operation === "add"){
+       return(num1+num2 +" add")
+    }
+    else if(operation === "subtract") {
+        return(num1-num2 +" subtract")
+    }
+    else if(operation === "multiply") {
+        return(num1*num2 +" multiply")
+    }
+    else if(operation === "divide") {
+        return(num1/num2 +" divide")
+    }
 
+}
 
 
 console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
